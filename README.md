@@ -35,7 +35,7 @@ Add into app project level
 
 ``` Gradle
 dependecies{
-    compile 'com.github.oceanbrasil:samsung-services-motion:2.5.1'
+    compile 'com.github.oceanbrasil:samsung-services-motion:2.2.1'
 }
 ```
 
