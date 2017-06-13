@@ -1,15 +1,22 @@
-# Accessory SDK
+# Motion SDK
 
-[![Latest Stable Version](https://img.shields.io/badge/version-2.5.1-green.svg)](http://developer.samsung.com/galaxy/accessory)
+[![Latest Stable Version](https://img.shields.io/badge/version-2.2.1-green.svg)](http://developer.samsung.com/galaxy/motion)
 
-> __Note:__ Samsung Accessory SDK 2.3.0 (and above) is required for devices on Android 6.0 (Marshmallow).
+Motion SDK allows you to collect motion information from the device and use it in your applications. You can collect from the device sensors raw data related to pedometer or activity recognition or the motions associated with answering the phone.
 
-Accessory SDK allows you to connect accessory devices to Samsung smart devices. With Accessory SDK, you can define a new service between the accessory and smart device, enabling you to use the various smart device functions from the accessory device. The service is compatible with various connectivity environments, which makes accessory development efficient and convenient.
+![Motion](http://developer.samsung.com/sd2_images/galaxy/content/SMS_Motion_01_2.jpg)
 
-Accessory SDK adds new functions to the service as Samsung smart devices improve. Future updates will enable the accessory and the smart device to exchange more information and support more interworking.
+You can use the Motion SDK to:
 
+  - Detecting call motion
+  - Using pedometer data
+  - Recognizing activities
+  
+__Detecting Call Motion__
 
-![Diagrma](http://developer.samsung.com/sd2_images/galaxy/content/SMS_Accessory_01.jpg)
+Motion SDK recognizes the action when the user first watches the device and then subsequently brings the device up to the ear. You can use this motion to answer an incoming call. If the user is reading a message, you can use the motion to call the number from which the message was sent.
+
+![Motion](http://developer.samsung.com/sd2_images/galaxy/content/SMS_Motion_02.jpg)
 
 ## Download
 
@@ -28,7 +35,7 @@ Add into app project level
 
 ``` Gradle
 dependecies{
-    compile 'com.github.oceanbrasil:samsung-services-accesory-sdk:2.5.1'
+    compile 'com.github.oceanbrasil:samsung-services-motion:2.5.1'
 }
 ```
 
